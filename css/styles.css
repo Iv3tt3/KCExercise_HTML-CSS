@@ -1,3 +1,51 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    min-width: 80px;
+    height:250px;
+    width:250px;
+    padding-left: 10pt;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo__image{
+    display: flex;
+    height: 100%;
+}
+.logo__name {
+    position: absolute;
+    width: max-content;
+    min-width: 50px;
+    bottom: 3%;
+    background-color: rgba(0, 0, 74, 0.8);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5pt 5pt 0pt 0pt;
+    border: 1pt solid darkred;
+    border-bottom-width: 3pt;
+    border-style: solid dashed double;
+    font-family: 'Monoton', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgb(247, 6, 6);
+}
+
+
+
 .aboutme {
     height: 75dvh;
 }
