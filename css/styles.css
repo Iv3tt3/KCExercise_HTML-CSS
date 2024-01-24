@@ -1,89 +1,11 @@
 *, *::before, *::after {
 	box-sizing: border-box;
-    background-color: rgb(238, 238, 238);
+    background-color: var(--backgd-color)
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    min-width: 200px;
-}
-
-header {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    border-bottom: solid 10pt;
-    margin-bottom: 0;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
-
-nav {
-    width: 70%;
-}
-
-nav a {
-    font-family: 'Creepster', Arial, Helvetica, sans-serif, system-ui;
-    text-decoration: none;
-    font-size: 2rem;
-    color: rgb(184 45 91);
-}
-
-.navmenu {
-    display: flex;
-    justify-content: space-evenly
-    
-}
-
-.logo {
-    min-width: 200px;
-    height:250px;
-    width:250px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo__image{
-    display: flex;
-    height: 100%;
-    max-width: 100%;
-}
-.logo__name {
-    position: absolute;
-    width: max-content;
-    max-width: 100%;
-    bottom: 3%;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5pt 5pt 0pt 0pt;
-    border: 1pt solid darkred;
-    border-bottom-width: 3pt;
-    border-style: solid dashed double;
-}
-.logo__name, .logo__name span {
-    background-color: rgb(184 45 91);
-    font-family: 'Monoton', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: white;
-}
-.logo__name span{
-    color: rgb(97, 198, 232);
-}
-
-.aboutme {
-    height: 75dvh;
-    position: relative;
-}
-.aboutme__image {
-    display: flex;
-    height:90dvw;
-    justify-content: space-around;
+    font-family: var(--font-family);
+    max-width: var(--content-max-width);
 }
 
 h1 {

@@ -1,0 +1,9 @@
+:root {
+    --font-size: 16px;
+    --font-family: Arial, Helvetica, sans-serif;
+    --color1-color: rgb(184 45 91);
+    --dark-color: #000033;
+    --backgd-color: rgb(238, 238, 238);;
+
+    --content-max-width:800px;
+}

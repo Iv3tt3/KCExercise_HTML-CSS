@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    border-bottom: solid 10pt;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+}
+
+.header__logo {
+    min-width: 200px;
+    height:250px;
+    width:250px;
+    margin: 0 15px 0 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__logo__image{
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+}
+.header__logo__name {
+    position: absolute;
+    width: max-content;
+    max-width: 100%;
+    bottom: 3%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5pt 5pt 0pt 0pt;
+    border: 1pt solid darkred;
+    border-bottom-width: 3pt;
+    border-style: solid dashed double;
+}
+.header__logo__name, .logo__name span {
+    background-color: rgb(184 45 91);
+    font-family: 'Monoton', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+.header__logo__name span{
+    color: rgb(97, 198, 232);
+}
