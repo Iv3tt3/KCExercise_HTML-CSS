@@ -10,20 +10,26 @@
 }
 
 body {
-    margin: 15px ;
+    margin: 0 15px 0 15px ;
+    min-width: 300px;
 }
 
 h1 {
-    font-family: 'Flavors', cursive;font-size: 35pt;
+    font-family: 'Flavors', cursive;
+    font-size: 35pt;
     text-transform: uppercase;
     color: white;
     background-color: #20aacc;
-    padding: 10px;
 }
 
-.bloodword {
-    font-family: 'Lacquer', system-ui;font-size: 33pt;
-    font-weight: bold ;    text-transform: uppercase;
+h3 {
+    font-family: 'Lacquer', system-ui;
+    font-size: 18pt;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold ;   
+    text-transform: uppercase;
+    color: var(--color1-color);
 }
 
 .aboutme img {

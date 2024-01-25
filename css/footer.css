@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--color1-color);
+  display: flex;
+  flex-direction: column-reverse;
+  height: 50px;
+  margin: 20px -15px 0 -15px;
+  /* Lo fijamos en el fondo de la página */
+}
+
+.socialmedia, .socialmedia li{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: inherit;
+  padding: 0;
+}
+
+.socialmedia a {
+  background-color: inherit;
+  text-decoration: none;
+  color: white;
+}

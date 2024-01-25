@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
@@ -98,14 +100,88 @@
         </section>
 
         <section class="contact">
-            Feel free to contact me for a wild and chaotic collaboration!
+            <h1>Reach me</h1>
+            <div class="contact__content">
+            <h3 class="contact__motto">Feel free to contact me for a wild and chaotic collaboration!</h3>
+            <form method="post" action="/" class="contactform">
+                <div class="form__item">
+                  <label class="form__label" for="name">Name:</label>
+                  <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="suname">Surname:</label>
+                    <input class="form__input" type="text" id="surname" name="surname" placeholder="Your surname" required>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="phone">Phone:</label>
+                    <input class="form__input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        placeholder="+34-621-123-123"
+                        pattern="\+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                        title="Format +34-621-123-123"
+                    >
+                </div>
+
+                <div class="form__item form__item--radio">
+                    <p class="form__label">How did you meet me?</p>
+                    <div>
+                        <input type="radio" id="uni" name="howMet" value="uni">
+                        <label for="uni">University</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="kc" name="howMet" value="kc">
+                        <label for="kc">Keepcoding kick-off</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sch" name="howMet" value="shc">
+                        <label for="sch">School</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="git" name="howMet" value="git">
+                        <label for="git">Github</label>
+                    </div>
+                  </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="github">Gihub username:</label>
+                    <input class="form__input" 
+                        type="text" 
+                        id="github" 
+                        name="github" 
+                        placeholder="@username" 
+                        pattern="^@[^\s]+"
+                        required
+                    >
+                </div>
+
+                <div class="form__item form__item--check">
+                    <label class="form__label" for="newsletter">Subscribe to newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="selected" checked>
+                </div>
+
+                <div>
+                    <input class="btn btn--auxiliar" type="reset" value="Reset form">
+                    <input class="btn" type="submit" value="Submit">
+                </div>
+                
+            </form>
+            </div>
         </section>
     </main>
     <aside>
 
     </aside>
-    <footer>
-
+    <footer class="footer">
+            <ul class="socialmedia">
+            <li><a href="https://www.instagram.com/harleyquinnily/?hl=es" target="blank" rel="noreferrer noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/people/Harley-Quinzel/pfbid02Kn1W43WjMeu2LEpr9PbJYNGf6FfxWykpeZkkNcerk4xQTHpF3jhiZsysHUpfjzMal/" target="blank" rel="noreferrer noopener">Facebook</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Harley_Quinn" target="blank" rel="noreferrer noopener">Wikipedia</a></li>
+            </ul>
     </footer>
 </body>
 </html>

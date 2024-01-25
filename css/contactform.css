@@ -1,0 +1,43 @@
+
+.contact__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    align-self: center;
+    max-width: 500px;
+    min-width: 300px;
+}
+.contact form {
+    max-width: 250px;
+    align-self: center;
+    min-width: 250px;
+}
+
+.form__label {
+    display: block;
+    margin: 5px 0;
+}
+
+.form__item input{
+    margin: 0px 0 10px 0;
+    border: 1px solid var(--color1-color);
+    background-color: white;
+    color: green;
+    padding: 8px 6px;
+    width: 100%;
+}
+.form__item input[type="radio"]{
+
+    width: initial;
+}
+
+
+.form__item--radio {
+    display: flex;
+    flex-direction: column;
+}
+.form__item--radio div{
+    display: inline;
+}
