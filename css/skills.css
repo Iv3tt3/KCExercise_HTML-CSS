@@ -9,6 +9,51 @@ padding: 10px;
 color: var(--color1-color);
 }
 .skills__list p{
-    border: 1pt solid red;
     padding: 10px;
 }
+
+.skills__level-container {
+    width: 40%;
+    padding: 10pt;
+    border-radius: 15pt;
+    border: 2pt solid var(--color1-color);
+    background-color: white;
+}
+
+.skills__level-bar {
+    background-color: var(--color1-color) ;
+    border-radius: 15pt 0 0 15pt;
+    padding: 5px 15px;
+    color: white;
+}
+
+#skill1 {
+    width: 80%;
+}
+
+#skill2, #skill7 {
+    width: 100%;
+    border-radius: 15pt;
+}
+
+#skill3, #skill10 {
+    width: 40%;
+}
+
+#skill4{
+    width: 90%;
+}
+
+#skill5{
+    width: 60%;
+}
+
+#skill6, #skill9 {
+    width: 50%;
+}
+
+#skill8 {
+    width: 70%;
+}
+
+
