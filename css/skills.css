@@ -1,0 +1,14 @@
+.skills__list {
+    display: grid;
+    gap: 10px;
+  }
+
+.skills__list h2{
+font-family: var(--font-family-titles);
+padding: 10px;
+color: var(--color1-color);
+}
+.skills__list p{
+    border: 1pt solid red;
+    padding: 10px;
+}

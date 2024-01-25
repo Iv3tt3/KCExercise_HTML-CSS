@@ -1,6 +1,8 @@
 :root {
     --font-size: 16px;
-    --font-family: Arial, Helvetica, sans-serif;
+    --font-family: Arial, Helvetica, sans-serif, system-ui;
+    --font-family-sections:'Creepster', Arial, Helvetica, sans-serif, system-ui;;
+    --font-family-titles:'Creepster', Arial, Helvetica, sans-serif, system-ui;
     --color1-color: rgb(184 45 91);
     --dark-color: #000033;
     --backgd-color: rgb(238, 238, 238);;
