@@ -32,7 +32,7 @@
     border-bottom-width: 3pt;
     border-style: solid dashed double;
 }
-.header__logo__name, .logo__name span {
+.header__logo__name, .header__logo__name span {
     background-color: rgb(184 45 91);
     font-family: 'Monoton', Arial, Helvetica, sans-serif;
     font-weight: 400;

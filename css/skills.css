@@ -1,6 +1,9 @@
 .skills__list {
     display: grid;
     gap: 10px;
+    max-width: 350px;
+    align-items: center;
+    justify-content: center;
   }
 
 .skills__list h2{
@@ -10,10 +13,13 @@ color: var(--color1-color);
 }
 .skills__list p{
     padding: 10px;
+    color: var(--color-aux-font);
+    font-style: italic;
+    text-align: justify;
 }
 
 .skills__level-container {
-    width: 40%;
+    min-width: 60%;
     padding: 10pt;
     border-radius: 15pt;
     border: 2pt solid var(--color1-color);
@@ -25,6 +31,18 @@ color: var(--color1-color);
     border-radius: 15pt 0 0 15pt;
     padding: 5px 15px;
     color: white;
+}
+
+.skills__level-bar {
+    /* Define tu animación aquí */
+    animation-name: myAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes myAnimation {
+    0% {
+        width: 0%;
+    }
 }
 
 #skill1 {
@@ -57,3 +75,16 @@ color: var(--color1-color);
 }
 
 
+@media (min-width:800px) {
+
+    .skills__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        align-items: start;
+        gap: 10px;
+        max-width: 1000px;
+        grid-gap: 30px;
+        margin: 30px
+      }
+
+}

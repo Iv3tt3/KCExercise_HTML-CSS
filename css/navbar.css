@@ -10,6 +10,8 @@ nav {
     border: 1pt solid lightgrey;
     background-color: whitesmoke;
     border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .navbar a{
@@ -21,18 +23,61 @@ nav {
 
 .navbar__menu {
     list-style: none;
-    display: flex;
+    display: none;
     padding: 0 20px;
 }
 
-.navbar__menu__item{
-    display: none;
-    
+#checkmenu {
+    z-index: 3;
+    position: absolute;
+    top:0;
+    right:10px;
+    width: 80px;
+    height: 120%;
+    opacity: 0;
+    cursor: pointer;
 }
 
-#menu {
+#checkmenu:checked ~ .navbar__menu{
+    display: block;
+}
+
+#checkmenu:checked ~ .menu{
+    display: none;
+}
+
+#checkmenu:checked ~ .close{
     display: flex;
-    margin:0px;
+}
+
+
+.menu, .close{
+    display: block;
     font-family: 'Creepster', Arial, Helvetica, sans-serif, system-ui;
+    color: var(--color1-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    cursor: pointer;
+    width: 80px;
+    margin: 10pt;
+    background-color: white;
+    border-radius: 10pt;
+}
+
+.close {
+    display: none;
+}
+
+@media (min-width:850px) {
+
+    #checkmenu, .menu, .close {
+        display: none;
+    }
     
+    .navbar, .navbar__menu{
+        display: flex;
+        gap: 25pt;
+    }
 }

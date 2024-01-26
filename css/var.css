@@ -4,8 +4,9 @@
     --font-family-sections:'Creepster', Arial, Helvetica, sans-serif, system-ui;;
     --font-family-titles:'Creepster', Arial, Helvetica, sans-serif, system-ui;
     --color1-color: rgb(184 45 91);
+    --color-aux-font: rgb(132, 132, 132);
     --dark-color: #000033;
     --backgd-color: rgb(238, 238, 238);;
 
-    --content-max-width:800px;
+    --content-max-width:850px;
 }
