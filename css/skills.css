@@ -37,11 +37,11 @@ color: var(--color1-color);
 
 .skills__level-bar {
     /* Define tu animación aquí */
-    animation-name: myAnimation;
+    animation-name: animationBar;
     animation-duration: 2s;
 }
 
-@keyframes myAnimation {
+@keyframes animationBar {
     0% {
         width: 0%;
     }

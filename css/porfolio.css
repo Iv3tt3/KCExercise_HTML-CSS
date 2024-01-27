@@ -1,0 +1,54 @@
+.porfolio {
+    display: grid;
+    margin: 10px;
+    row-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.porfolio__image, .porfolio__image-art {
+    height: 50vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video {
+    display: initial;
+    object-fit: cover;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+
+}
+
+@media(min-width: 1200px) {
+    .porfolio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .porfolio__image-art{
+        grid-column: span 3;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+@media (min-width:1600px) {
+    .porfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .porfolio__image-art{
+        grid-column: initial;
+        width: initial;
+        object-fit: initial;
+        object-position: initial;
+    }
+}

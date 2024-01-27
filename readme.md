@@ -17,9 +17,21 @@ This is a portfolio of a fictional character created with HTML&CSS.
 - Create a header with a navigation bar, which must have links to each element of the portfolio. All links should have a smooth hover effect with a transition. These links are not necessary in the mobile version.
 
 - A section with a description of ourselves and our skills represented as progress bars. These progress bars must be animated using CSS animations.
-● A banner with a background image. On mobile screens, it should be a different image to make the design more meaningful at that resolution.
-● Contact form with the following inputs. All of them must have the correct types and HTML validation for each input.
-○ Name - (required field)
-○ Last name - (required field)
-○ Phone - (required field)
-○ Radio inputs to answer the question "How did you find me?" - (required)
+
+- A banner with a background image. On mobile screens, it should be a different image to make the design more meaningful at that resolution.
+
+- Contact form with the following inputs. All of them must have the correct types and HTML validation for each input.
+    - Name - required field
+    - Last name - required field
+    - Phone - required field
+    - Radio inputs to answer the question "How did you find me?" - required field. Options: University/Keepcoding kick-off/School/Github
+    - Github tag (use regexp “^@[^\s]+” ) 
+    - Suscription to newsletter (checkbox)
+    - More information input (Text max. 180 characters) - required field
+    - Submit and reset button
+
+- Footer with links to our social media. It's important to note that these are links to external resources.
+
+- New page featuring a video that plays upon entering the website and appears with a fadeIn animation.
+
+- On the new page, create a grid showcasing the porfolio projects
