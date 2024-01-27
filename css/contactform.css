@@ -23,11 +23,11 @@
     font-size: 16px;
 }
 
-.form__item input{
+.form__item input, .form__input{
     margin: 0px 0 10px 0;
     border: 1px solid var(--color1-color);
     background-color: white;
-    color: green;
+    color: var(--color2-color);
     padding: 8px 6px;
     width: 100%;
 }
@@ -83,4 +83,10 @@
     color: var(--color2-color);
     text-decoration: underline;
     opacity: 0.5;
+}
+
+.btn:hover, .btn--auxiliar:hover {
+    background-color: var(--color2-color);
+    color:white;
+    transition: all 1s ease-in-out;
 }

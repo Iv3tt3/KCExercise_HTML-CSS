@@ -27,4 +27,5 @@
   transition-duration: 1s;
   background-color: white;
   color: var(--color2-color);
+  transition: all 1s ease-in-out;
 }

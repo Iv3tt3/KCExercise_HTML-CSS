@@ -116,7 +116,9 @@
             </section>
             <section class="banner">
                 <h1>porfolio</h1>
-                <img src="./assets/img/HarleyQuinnIv3tt3.jpg" alt="Harely Quinn profile photo">
+                <img class="banner__img-mobile" src="./assets/img/HarleyQuinnIv3tt3.jpg" alt="Harely Quinn profile photo">
+                <img class="banner__img-screen" src="./assets/img/HarelyQuinnIv3tt3banner.png" alt="Harely Quinn profile photo">
+                <div class="banner__btn"><a href="porfolio.html">Quinn's Projects</a></div>  
             </section>
             <section class="contact" id="contact">
                 <h1>Reach me</h1>
@@ -149,7 +151,7 @@
                     <div class="form__item form__item--radio">
                         <p class="form__label">How did you meet me?</p>
                         <div>
-                            <input type="radio" id="uni" name="howMet" value="uni">
+                            <input type="radio" id="uni" name="howMet" value="uni" required>
                             <label for="uni">University</label>
                         </div>
                         <div>
@@ -176,6 +178,11 @@
                             pattern="^@[^\s]+"
                             required
                         >
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label" for="msg">Send me a message:</label>
+                        <textarea class="form__input" name="msg" id="msg" cols="33" rows="6" required maxlength="180"></textarea>                    
                     </div>
 
                     <div class="form__item form__item--check">
