@@ -4,19 +4,27 @@
   flex-direction: column-reverse;
   height: 50px;
   margin: 20px -15px 0 -15px;
-  /* Lo fijamos en el fondo de la página */
+  justify-content: center;
 }
 
 .socialmedia, .socialmedia li{
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  background-color: inherit;
-  padding: 0;
 }
 
 .socialmedia a {
-  background-color: inherit;
   text-decoration: none;
   color: white;
+  font-weight: 300;
+  padding: 10pt;
+  border-radius:5pt;
+}
+
+.socialmedia a:hover{
+
+  transition-property: background-color;
+  transition-duration: 1s;
+  background-color: white;
+  color: var(--color2-color);
 }

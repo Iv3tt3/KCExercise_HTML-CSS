@@ -16,6 +16,8 @@ color: var(--color1-color);
     color: var(--color-aux-font);
     font-style: italic;
     text-align: justify;
+    margin: 0;
+    font-size: 12pt;
 }
 
 .skills__level-container {
@@ -87,4 +89,18 @@ color: var(--color1-color);
         margin: 30px
       }
 
+}
+
+@media(min-width: 1200px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .aboutme{
+        grid-column: span 2;
+    }
+    .skills {
+        grid-row: span 2;
+    }
 }

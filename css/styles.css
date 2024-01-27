@@ -5,15 +5,16 @@
 }
 
 * {
-    font-family: var(--font-family);
-    max-width: var(--content-max-width);
-
+    font-family: var(--font-family);    
 }
 
 body {
     min-width: 300px;
     background-color: var(--backgd-color);
-
+    padding: 0pt 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 h1 {
@@ -22,14 +23,43 @@ h1 {
     text-transform: uppercase;
     color: white;
     background-color: #20aacc;
+    padding: 15px 25px;
 }
 
 h3 {
     font-family: 'Lacquer', system-ui;
-    font-size: 18pt;
+    font-size: 20pt;
     text-align: center;
     padding: 0 20px;
     font-weight: bold ;   
     text-transform: uppercase;
     color: var(--color1-color);
+    line-height: 1.5;
+}
+
+p {
+    margin: 15pt;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+@media(min-width: 480px) {
+    .wrapper {
+      max-width: var(--content-max-width);
+      margin: 0 auto;
+    }
+  }
+
+@media(min-width: 1200px) {
+    .wrapper {
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .wrapper {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }

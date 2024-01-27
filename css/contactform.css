@@ -8,6 +8,8 @@
     align-self: center;
     max-width: 500px;
     min-width: 300px;
+    font-weight: 400;
+    margin: 25px;
 }
 .contact form {
     max-width: 250px;
@@ -17,7 +19,8 @@
 
 .form__label {
     display: block;
-    margin: 5px 0;
+    margin: 15px 0 5px 0;
+    font-size: 16px;
 }
 
 .form__item input{
@@ -29,7 +32,7 @@
     width: 100%;
 }
 .form__item input[type="radio"]{
-
+    margin: 0 15px;
     width: initial;
 }
 
@@ -40,4 +43,44 @@
 }
 .form__item--radio div{
     display: inline;
+    background-color: rgba(241, 163, 163, 0.139);
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.form__item--check {
+    position: relative;
+    margin: 20pt 0 20pt 30pt;
+    padding: 0;
+}
+#newsletter {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    left: 0;
+    margin-left: -20pt;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn, .btn--auxiliar {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1pt solid white;
+    color: white;
+    background-color: var(--color1-color);
+}
+
+.btn--auxiliar {
+    background-color: white;
+    border: 1pt solid var(--color2-color);
+    color: var(--color2-color);
+    text-decoration: underline;
+    opacity: 0.5;
 }

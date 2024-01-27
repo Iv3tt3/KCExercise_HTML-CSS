@@ -5,26 +5,37 @@ nav {
 .navbar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: 10px;
     margin: 20px 10px 0 0;
     border: 1pt solid lightgrey;
     background-color: whitesmoke;
     border-radius: 15px;
     display: flex;
     flex-direction: row-reverse;
+    row-gap: 20px;
 }
 
 .navbar a{
     text-decoration: none;
     font-size: 2rem;
-    color: rgb(184 45 91);
+    color: var(--color1-color);
     font-family: 'Creepster', Arial, Helvetica, sans-serif, system-ui;
+}
+
+.navbar a:hover{
+    color: var(--color2-color);
+    background-color: var(--color1-color);
+    padding: 10pt;
+    transition: all 1s ease-in-out;
 }
 
 .navbar__menu {
     list-style: none;
     display: none;
     padding: 0 20px;
+}
+.navbar__menu__item {
+    margin: 10px
 }
 
 #checkmenu {
@@ -79,5 +90,20 @@ nav {
     .navbar, .navbar__menu{
         display: flex;
         gap: 25pt;
+    }
+    .navbar {
+        right: calc(50% - 425px);
+    } 
+}
+
+@media (min-width:1200px) {
+    .navbar {
+        right: calc(50% - 600px);
+    }
+}
+
+@media (min-width:1600px) {
+    .navbar {
+        right: calc(50% - 800px);
     }
 }
