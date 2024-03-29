@@ -1,4 +1,6 @@
-
+.contact{
+    position: relative;
+}
 .contact__content{
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 nav {
     font-family: 'Creepster', Arial, Helvetica, sans-serif, system-ui;
+    z-index: 100;
 }
 
 .navbar{
